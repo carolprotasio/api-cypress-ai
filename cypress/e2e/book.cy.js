@@ -76,17 +76,17 @@ describe('/book CRUD', () => {
   })
   it('CT-004 DELETE - should delete a book by ID', function () {
     const book = this.books.delete
-    
 
-    cy.postNewBook(book)    
+    cy.postNewBook(book)
       .then(response => {
         const bookId = response.body._id
         cy.log('ID do livro criado:', bookId);
 
         cy.deleteBookById(bookId)
           .then(response => {
+            cy.log(response.body)
             expect(response.status).to.eql(200)
-            expect(response.body.message).to.have.text('Livro removido com sucesso.')
+            expect(response.body.message).to.eq('Livro removido com sucesso.')
 
           })
       })

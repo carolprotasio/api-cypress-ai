@@ -1,0 +1,67 @@
+{
+  "create": {
+    "title": "A Revolução dos Bichos",
+    "author": "George Orwell",
+    "publisher": "Secker & Warburg",
+    "year": 1945,
+    "pages": 112
+  },
+  "duplicate": {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "publisher": "Ballantine Books",
+    "year": 1953,
+    "pages": 160
+  },
+  "not_found": {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "publisher": "Chatto & Windus",
+    "year": 1932,
+    "pages": 268
+  },
+  "change": {
+    "title": "O Conto da Aia",
+    "author": "Margaret Atwood",
+    "publisher": "McClelland & Stewart",
+    "year": 1985,
+    "pages": 311
+  },
+  "manyBooks": [
+    {
+      "title": "A Revolução dos Bichos",
+      "author": "George Orwell",
+      "publisher": "Editora X",
+      "year": 1945,
+      "pages": 144
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "publisher": "Editora Y",
+      "year": 1949,
+      "pages": 328
+    },
+    {
+      "title": "Dom Quixote",
+      "author": "Miguel de Cervantes",
+      "publisher": "Editora Z",
+      "year": 1605,
+      "pages": 1023
+    },
+    {
+      "title": "O Pequeno Príncipe",
+      "author": "Antoine de Saint-Exupéry",
+      "publisher": "Editora W",
+      "year": 1943,
+      "pages": 96
+    },
+    {
+      "title": "Cem Anos de Solidão",
+      "author": "Gabriel García Márquez",
+      "publisher": "Editora V",
+      "year": 1967,
+      "pages": 417
+    }
+  ]
+}

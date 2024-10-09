@@ -22,6 +22,14 @@ Cypress.Commands.add('getBooks', () => {
         failOnStatusCode: false,
       }).then(response => {return response })
  })
+ Cypress.Commands.add('updateBookById', (id, book) => { 
+  cy.api({
+      url:  `/api/books/${id}`,
+      method: 'PUT', 
+      body: book,       
+      failOnStatusCode: false,
+    }).then(response => {return response })
+})
  Cypress.Commands.add('deleteBookById', (id) => { 
     cy.api({
         url: `/api/books/${id}`,

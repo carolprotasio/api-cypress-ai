@@ -74,7 +74,25 @@ describe('/book CRUD', () => {
       })
 
   })
-  it('CT-004 DELETE - should delete a book by ID', function () {
+  it('CT-005 PUT - update a book by ID', function () {
+    const book = this.books.create
+    const updateBook = this.books.update
+
+    cy.postNewBook(book)
+      .then(response => {
+        const bookId = response.body._id
+        cy.log('ID do livro criado:', bookId);
+
+        cy.updateBookById(bookId, updateBook)
+          .then(bookResp => {
+            expect(bookResp.status).eql(200)
+            expect(bookResp.body._id).to.eq(bookId)
+
+          })
+      })
+
+  })
+  it.only('CT-006 DELETE - should delete a book by ID', function () {
     const book = this.books.delete
 
     cy.postNewBook(book)

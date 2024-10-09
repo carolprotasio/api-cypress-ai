@@ -1,4 +1,4 @@
-# Criando e Testando APIs com Cypress
+# Criando e Testando APIs com Cypress & AI
 
 ## 🚀 Sobre o Projeto
 

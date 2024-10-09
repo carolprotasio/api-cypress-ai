@@ -39,6 +39,12 @@ O prompt utilizado para desenvolver este projeto foi o seguinte:
 # 🧪 Testando a API com Cypress
 Para garantir a funcionalidade da API, foi utilizado o Cypress que permite a execução de testes em tempo real no navegador, proporcionando uma visão clara do comportamento da aplicação e facilitando a identificação de falhas. Foi utilizada a biblioteca **cypress-plugin-api**, que simplifica a criação de testes de APIs.
 
+
+<p align="center">
+  <img src="https://github.com/carolprotasio/api-cypress-ai/blob/main/cypress/assets/test-cy-cli.png" alt="web" width="400"/>
+</p>
+
+
 ## 🔍 Cenários e Casos de Teste
 
 ### Cenários de Teste

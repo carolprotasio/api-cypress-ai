@@ -44,24 +44,39 @@ Para garantir a funcionalidade da API, foi utilizado o Cypress que permite a exe
 ### Cenários de Teste
 
 1. **Cadastro de Livro**
-   - **Caso de Teste 1**: Sucesso no cadastro com todos os campos preenchidos corretamente.
-   - **Caso de Teste 2**: Falha no cadastro quando um ou mais campos obrigatórios estão vazios.
+   - **Caso de Teste 1 (CT-001)**: Sucesso no cadastro de um novo livro.
+     - Descrição: O sistema deve permitir o registro de um novo livro com todos os campos preenchidos corretamente.
+   - **Caso de Teste 2 (CT-002)**: Falha ao tentar cadastrar um livro com título duplicado.
+     - Descrição: O sistema deve retornar um erro ao tentar cadastrar um livro que já existe.
+       
+    
+   <img src="https://github.com/carolprotasio/api-cypress-ai/blob/main/cypress/assets/ct01.png" alt="web" width="400"/>
+   <img src="https://github.com/carolprotasio/api-cypress-ai/blob/main/cypress/assets/ct02.png" alt="web" width="400"/>
+
 
 2. **Listagem de Livros**
-   - **Caso de Teste 1**: Retornar todos os livros cadastrados.
-   - **Caso de Teste 2**: Retornar uma lista vazia quando nenhum livro estiver cadastrado.
+   - **Caso de Teste 3 (CT-003)**: Sucesso ao listar todos os livros cadastrados.
+     - Descrição: O sistema deve retornar uma lista com todos os livros registrados.
+       
+   <img src="https://github.com/carolprotasio/api-cypress-ai/blob/main/cypress/assets/ct03.png" alt="web" width="400"/>
 
 3. **Consulta de Livro por ID**
-   - **Caso de Teste 1**: Sucesso ao consultar um livro existente pelo ID.
-   - **Caso de Teste 2**: Falha ao consultar um livro inexistente.
-     
+   - **Caso de Teste 4 (CT-004)**: Sucesso ao consultar um livro específico pelo ID.
+     - Descrição: O sistema deve retornar as informações do livro correspondente ao ID fornecido.
+    
+   <img src="https://github.com/carolprotasio/api-cypress-ai/blob/main/cypress/assets/ct04.png" alt="web" width="400"/>
+
 4. **Alteração de Livro por ID**
-   - **Caso de Teste 1**: Sucesso ao alterar as informações de um livro existente pelo ID.
-   - **Caso de Teste 2**: Falha ao tentar alterar um livro que não existe, retornando um erro adequado.
+   - **Caso de Teste 5 (CT-005)**: Sucesso ao atualizar as informações de um livro existente pelo ID.
+     - Descrição: O sistema deve permitir a atualização dos dados de um livro específico.
+
+   <img src="https://github.com/carolprotasio/api-cypress-ai/blob/main/cypress/assets/ct05.png" alt="web" width="400"/>
 
 5. **Remoção de Livro**
-   - **Caso de Teste 1**: Sucesso ao remover um livro existente pelo ID.
-   - **Caso de Teste 2**: Falha ao tentar remover um livro que não existe.
+   - **Caso de Teste 6 (CT-006)**: Sucesso ao remover um livro pelo ID.
+     - Descrição: O sistema deve deletar o livro correspondente ao ID fornecido e retornar uma mensagem de sucesso.
+
+   <img src="https://github.com/carolprotasio/api-cypress-ai/blob/main/cypress/assets/ct06.png" alt="web" width="400"/>
   
 ## 🔧 Passos para Instalação
 

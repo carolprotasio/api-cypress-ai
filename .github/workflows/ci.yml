@@ -23,14 +23,15 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-    
-    - name: Start server
-      run: npm start &
-   
-    - name: Wait for server
-      run: npx wait-on http://localhost:5000
 
-    - name: Run tests
+    # Iniciar o servidor diretamente com Node.js (sem Nodemon)
+    - name: Start server without nodemon
+      run: node src/app.js &
+
+    # Esperar o servidor iniciar
+    - name: Wait for server with timeout (60 seconds)
+      run: npx wait-on http://localhost:5000 --timeout=60000
+
+    # Executar os testes Cypress
+    - name: Run Cypress tests
       run: npx cypress run
-
-
